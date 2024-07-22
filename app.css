@@ -2,3 +2,10 @@
 .invisible{
     visibility: hidden;
 }
+.grigio{
+    color: grey;
+}
+
+.top{
+    background-color: aquamarine;
+}
