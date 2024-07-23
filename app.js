@@ -2,25 +2,21 @@ const formLavoro = document.getElementById('form-lavoro')
 
 const selectWork = document.getElementById('work-choice')
 
+
 const nameInputElement = document.getElementById('name')
 const lastNameInputElement = document.getElementById('lastname')
 const emailInputElement = document.getElementById('email')
-
-const userName = nameInputElement.value
-const lastName = lastNameInputElement.value
-const email = emailInputElement.value
-
-// if (userName === ' '){
-//     nameInputElement.classList.add('is-invalid')
-
-// } else {
-//     nameInputElement.classList.add('is-valid')
-// }
 
 const orario = 10
 
 formLavoro.addEventListener('submit', function(event) {
     event.preventDefault()
+
+const options = {
+    1: "Backend Development",
+    2: "Frontend Developtment",
+    3: "Project Analysis"
+};
 
     let preventivo = 0
 
@@ -47,8 +43,7 @@ switch (selectWork.value) {
 
 promoCodeInput.classList.remove('is-invalid','is-valid')
 
-
-const finalPrice = document.getElementById('row2')
+const finalPrice = document.getElementById('row2');
 
 if (promoCodeInput.value !== '') {
     const validityCode = scontoArray.includes(promoCodeInput.value);
@@ -60,19 +55,16 @@ if (promoCodeInput.value !== '') {
     } else {
         promoCodeInput.classList.add('is-invalid');
     }
-    }
+}
 
-const parteDecimale = preventivo.toFixed(2).split('.')[1]
-const parteIntera = Math.floor(preventivo)
+const parteDecimale = preventivo.toFixed(2).split('.')[1];
+const parteIntera = Math.floor(preventivo);
 
-const prezzo = `<b>€ ${parteIntera}</b>,${parteDecimale}` 
-finalPrice.innerHTML = prezzo
+const prezzo = `<div class="prezzo"><b>€ ${parteIntera}</b><span class="grigio">,${parteDecimale}</span></div>`;
+finalPrice.innerHTML = prezzo;
 
-const priceReveal = document.getElementById('final-price')
-priceReveal.classList.remove('invisible')
+const priceReveal = document.getElementById('final-price');
+priceReveal.classList.remove('invisible');
 
 })
-
-
-
 

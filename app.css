@@ -6,6 +6,18 @@
     color: grey;
 }
 
-.top{
-    background-color: aquamarine;
-}
+  #final-price .prezzo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1.5rem;
+  }
+
+  #final-price .prezzo b {
+    margin-right: 0.1rem;
+  }
+
+  #final-price .grigio {
+    color: gray;
+    font-size: 1.5rem;
+  }

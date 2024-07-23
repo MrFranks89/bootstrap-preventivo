@@ -44,7 +44,7 @@
 
     <main class=".d-lg-flex">
       <section class="section">
-        <div class="container py-4 top">
+        <div class="container py-4">
           <div class="row justify-content-between">
             <div class="col-xl-8">
               <h3 id="Title">Richiesta Preventivo</h3>
@@ -100,30 +100,30 @@
                   <div class="valid-feedback">il campo è valido</div>
                   <div class="invalid-feedback">il campo non è valido</div>
                 </div>
-                <div class="form-check">
+                <div class="form-check mb-4">
                   <input class="form-check-input" type="checkbox" value=""id="flexCheckDefault" required/>
                   <label class="form-check-label" for="flexCheckDefault">
                     Accetto la Privacy Policy
                   </label>
                 </div>
 
-                <div class="container m-5">
-                  <div class="row d-flex align-items-center justify-content-around">
-                    <div class="col-3">
+                <div class="container m-0 py-1">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-3 d-flex justify-content-center">
                       <button type="submit" class="btn btn-primary">
                         Calcola Preventivo
                       </button>
                     </div>
-                    <div class="col-3 invisible fs-5" id="final-price">
+                    <div class="col-lg-8 d-flex flex-column align-items-center invisible fs-5" id="final-price">
                       <div class="row fw-bolder" id="row1">Prezzo finale</div>
-                      <div class="row2 colore" id="row2"></div>
+                      <div class="row colore d-flex" id="row2"></div>
                     </div>
                   </div>
                 </div>
               </form>
             </div>
 
-            <div class="col-xl-4 d-flex justify-content-center h-75">
+            <div class="col-lg-4 d-flex  justify-content-center justify-content-lg-end h-75 align-items-start">
               <div class="card" style="width: 18rem">
                 <img
                   src="https://picsum.photos/300/200"
@@ -162,7 +162,9 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
-    ></script>
+    >
+  
+  </script>
     <script src="js/app.js"></script>
   </body>
 </html>
